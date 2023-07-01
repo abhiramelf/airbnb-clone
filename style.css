@@ -1,0 +1,395 @@
+:root {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+/* Navbar Component */
+
+h4 {
+    margin: 0;
+    padding: 0 16px;
+    border-right: 1px solid rgb(231, 231, 231);
+    font-weight: normal;
+    font-size: 14px;
+}
+
+p {
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgb(231, 231, 231); 
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+}
+
+.nav-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.airbnb-logo {
+    width: 100px;
+}
+
+.airbnb-logo:hover {
+    cursor: pointer;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    margin-left: 180px;
+    padding: 7px;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+}
+
+.nav-search:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.guests {
+    color: rgb(150, 150, 150);
+    border: none;
+    padding-right: 5px;
+}
+
+.search-icon {
+    padding: 10px;
+    margin: 0 1px 0 8px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+}
+
+.nav-profile h4 {
+    border: none;
+    padding: 0;
+}
+
+.globe-icon {
+    margin: 0 30px;
+}
+
+.user-profile {
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+}
+
+.user-profile:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.ham-icon {
+    padding: 7px;
+}
+
+.user-icon {
+    margin-top: 3px;
+    padding: 5px;
+}
+
+/* Property Type Selection Component */
+
+.property-type {
+    height: 80px;
+    position: sticky;
+    top: 60px;
+    padding: 10px 0 10px 0;
+    background-color: white;
+    z-index: 2;
+}
+
+.property-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 30px 80px;
+}
+
+.types {
+    opacity: 0.6;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.types:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.type-img {
+    width: 25px;
+}
+
+.filter {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.filter p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Total Pricing Toggle Component */
+
+/* .price-toggle {
+    
+} */
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.toggle-container-body {
+    display: flex;
+    align-items: center;
+    padding:15px;
+    gap: 180px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.toggle-container-text {
+    display: flex;
+    align-items: center;
+}
+
+.fee {
+    border: none;
+    color: gray;
+}
+
+ /* The switch - the box around the slider */
+ .switch {
+     position: relative;
+     display: inline-block;
+     width: 60px;
+     height: 34px;
+ }
+
+ /* Hide default HTML checkbox */
+ .switch input {
+     opacity: 0;
+     width: 0;
+     height: 0;
+ }
+
+ /* The slider */
+ .slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #ccc;
+     -webkit-transition: .4s;
+     transition: .4s;
+ }
+
+ .slider:hover {
+    background-color: rgb(162, 162, 162);
+ }
+
+ .slider:before {
+     position: absolute;
+     content: "";
+     height: 26px;
+     width: 26px;
+     left: 4px;
+     bottom: 4px;
+     background-color: white;
+     -webkit-transition: .4s;
+     transition: .4s;
+ }
+
+ input:checked+.slider {
+     background-color: black;
+ }
+
+ input:focus+.slider {
+     box-shadow: 0 0 1px black;
+ }
+
+ input:checked+.slider:before {
+     -webkit-transform: translateX(26px);
+     -ms-transform: translateX(26px);
+     transform: translateX(26px);
+ }
+
+ /* Rounded sliders */
+ .slider.round {
+     border-radius: 34px;
+ }
+
+ .slider.round:before {
+     border-radius: 50%;
+ }
+
+/* Property Listing Component */
+
+.property-card {
+    margin: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    width: 325px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.card-container:hover {
+    cursor: pointer;
+}
+
+.card-img {
+    width: 325px;
+    height: 325px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.favourite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card-body {
+    display: flex;
+    padding-top: 8px;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.distance {
+    color: gray;
+}
+
+.date {
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.card-rating {
+    display: flex;
+}
+
+.card-rating p {
+    padding-left: 3px;
+}
+
+/* Show Maps Button Component */
+
+.maps {
+    position: fixed;
+    left: 45.5%;
+    bottom: 100px;
+}
+
+.map-button {
+    background-color: rgb(39, 37, 37);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.map-button:hover {
+    cursor: pointer;
+    background-color: rgb(69, 69, 69);
+}
+
+/* Footer Component */
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+
+a  {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(71, 69, 69);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 80px;
+    border-top: 1px solid lightgray;
+}
+
+.footer-left {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-left p {
+    font-size: 14px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-right p {
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Homes & Apartment Rentals - Airbnb</title>
+    <link rel="icon" type="image/x-icon" href="/images/Airbnb_favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="body-container">
+        <!-- Navbar Component -->
+        <div class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="./images/Airbnb-logo.png" alt="airbnb_logo" class="airbnb-logo">
+                </div>
+                <div class="nav-search">
+                    <h4>Anywhere</h4>
+                    <h4>Any week</h4>
+                    <h4 class="guests">Add guests</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" viewBox="0 0 32 32"
+                        style="display:block;fill:none;height:12px;width:12px;stroke:white;stroke-width:5.333333333333333;overflow:visible"
+                        aria-hidden="true" role="presentation" focusable="false">
+                        <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+                    </svg>
+                </div>
+                <div class="nav-profile">
+                    <h4 class="pointer">Airbnb your home</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-globe globe-icon pointer" viewBox="0 0 16 16">
+                        <path
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                    </svg>
+                    <div class="user-profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-list ham-icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-person-circle user-icon" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Property Type Selection Component -->
+        <div class="property-type">
+            <div class="property-container">
+                <div class="types">
+                    <img src="./images/farm.png" alt="farm_img" class="type-img">
+                    <p>Farms</p>
+                </div>
+                <div class="types">
+                    <img src="./images/room.png" alt="farm_img" class="type-img">
+                    <p>Rooms</p>
+                </div>
+                <div class="types">
+                    <img src="./images/amazing_view.png" alt="farm_img" class="type-img">
+                    <p>Amazing View</p>
+                </div>
+                <div class="types">
+                    <img src="./images/dome.png" alt="farm_img" class="type-img">
+                    <p>Domes</p>
+                </div>
+                <div class="types">
+                    <img src="./images/container.png" alt="farm_img" class="type-img">
+                    <p>Containers</p>
+                </div>
+                <div class="types">
+                    <img src="./images/amazing_pool.png" alt="farm_img" class="type-img">
+                    <p>Amazing Pool</p>
+                </div>
+                <div class="types">
+                    <img src="./images/beachfront.png" alt="farm_img" class="type-img">
+                    <p>Beachfront</p>
+                </div>
+                <div class="types">
+                    <img src="./images/countryside.png" alt="farm_img" class="type-img">
+                    <p>Countryside</p>
+                </div>
+                <div class="types">
+                    <img src="./images/OMG.png" alt="farm_img" class="type-img">
+                    <p>OMG!</p>
+                </div>
+                <div class="types">
+                    <img src="./images/lakefront.png" alt="farm_img" class="type-img">
+                    <p>Lakefront</p>
+                </div>
+                <div class="types">
+                    <img src="./images/cabin.png" alt="farm_img" class="type-img">
+                    <p>Cabins</p>
+                </div>
+                <div class="types">
+                    <img src="./images/historical.png" alt="farm_img" class="type-img">
+                    <p>Historical homes</p>
+                </div>
+                <div class="types">
+                    <img src="./images/bed&breakfast.png" alt="farm_img" class="type-img">
+                    <p>Bed & Breakfast</p>
+                </div>
+                <div class="filter pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                        style="display:block;height:14px;width:14px;fill:currentColor" aria-hidden="true" role="presentation"
+                        focusable="false">
+                        <path
+                            d="M5 8a3 3 0 0 1 2.83 2H14v2H7.83A3 3 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.83 4H2V4h6.17A3 3 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                        </path>
+                    </svg>
+                    <p>Filters</p>
+                </div>
+        
+            </div>
+        </div>
+        <!-- Total Pricing Toggle Component -->
+        <div class="price-toggle">
+            <div class="toggle-container">
+                <div class="toggle-container-body">
+                    <div class="toggle-container-text">
+                        <h4>Display total price</h4>
+                        <h4 class="fee">Includes all fees, before taxes</h4>
+                    </div>
+                    <div class="toggle-container-switch">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Property Listing Component -->
+        <div class="property-card">
+            <div class="card-container">
+                <img src="./images/Bengaluru.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Bengaluru, India</p>
+                        <p class="distance">200 kilometers away</p>
+                        <p class="date">2-7 July</p>
+                        <p><span class="price">&#8377;4565</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.79</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Hosur.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Hosur, India</p>
+                        <p class="distance">50 kilometers away</p>
+                        <p class="date">9-14 July</p>
+                        <p><span class="price">&#8377;5149</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.94</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Karnataka.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Karnataka, India</p>
+                        <p class="distance">199 kilometers away</p>
+                        <p class="date">10-17 July</p>
+                        <p><span class="price">&#8377;13678</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.6</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Kodagu.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Kodagu, India</p>
+                        <p class="distance">250 kilometers away</p>
+                        <p class="date">12-17 July</p>
+                        <p><span class="price">&#8377;6765</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.78</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Kotagiri.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Kothagiri, India</p>
+                        <p class="distance">125 kilometers away</p>
+                        <p class="date">22-27 July</p>
+                        <p><span class="price">&#8377;4378</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.88</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Kottappadi.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Kottppadi, India</p>
+                        <p class="distance">175 kilometers away</p>
+                        <p class="date">23-27 July</p>
+                        <p><span class="price">&#8377;3245</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.33</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Kuklur.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Kuklur, India</p>
+                        <p class="distance">88 kilometers away</p>
+                        <p class="date">14-17 July</p>
+                        <p><span class="price">&#8377;2400</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.54</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Mananthavady.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Mananthavady, India</p>
+                        <p class="distance">220 kilometers away</p>
+                        <p class="date">25-29 July</p>
+                        <p><span class="price">&#8377;10657</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.98</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Munnar.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Munnar, India</p>
+                        <p class="distance">230 kilometers away</p>
+                        <p class="date">16-23 July</p>
+                        <p><span class="price">&#8377;5788</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.96</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Mysore.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Mysore, India</p>
+                        <p class="distance">188 kilometers away</p>
+                        <p class="date">2-7 August</p>
+                        <p><span class="price">&#8377;8777</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.45</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Nandi_hills.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Nandi Hills, India</p>
+                        <p class="distance">88 kilometers away</p>
+                        <p class="date">12-17 July</p>
+                        <p><span class="price">&#8377;5500</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.33</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Nilgiris.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Nilgiris, India</p>
+                        <p class="distance">133 kilometers away</p>
+                        <p class="date">2-7 July</p>
+                        <p><span class="price">&#8377;6777</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.88</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Ooty.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Ooty, India</p>
+                        <p class="distance">158 kilometers away</p>
+                        <p class="date">28-30 July</p>
+                        <p><span class="price">&#8377;6788</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Srirangapatba.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Srirangapatna, India</p>
+                        <p class="distance">220 kilometers away</p>
+                        <p class="date">21-27 July</p>
+                        <p><span class="price">&#8377;8899</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.65</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/Tadakalu.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">Tadakalu, India</p>
+                        <p class="distance">159 kilometers away</p>
+                        <p class="date">25-29 July</p>
+                        <p><span class="price">&#8377;6000</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.88</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="./images/IN.webp" alt="bengaluru_img" class="card-img">
+                <svg xmlns="http://www.w3.org/2000/svg" class="favourite" viewBox="0 0 32 32"
+                    style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: white; stroke-width: 2px; overflow: visible;"
+                    aria-hidden="true" role="presentation" focusable="false">
+                    <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z">
+                    </path>
+                </svg>
+                <div class="card-body">
+                    <div class="card-text">
+                        <p class="title">IN, India</p>
+                        <p class="distance">100 kilometers away</p>
+                        <p class="date">2-7 July</p>
+                        <p><span class="price">&#8377;5566</span> night</p>
+                    </div>
+                    <div class="card-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <p>4.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Show Maps Button Component -->
+        <div class="maps">
+            <button class="map-button">Show Map&ensp;<i class="bi bi-map-fill"></i></button>
+        </div>
+        <!-- Footer Component -->
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <p><i class="bi bi-c-circle"></i> 2023 Airbnb, Inc.</p>
+                    <span class="_15vc6yg" aria-hidden="true">·</span>
+                    <p><a href="">Privacy</a></p>
+                    <span class="_15vc6yg" aria-hidden="true">·</span>
+                    <p><a href="">Terms</a></p>
+                    <span class="_15vc6yg" aria-hidden="true">·</span>
+                    <p><a href="">Sitemap</a></p>
+                    <span class="_15vc6yg" aria-hidden="true">·</span>
+                    <p><a href="">Company details</a></p>
+                    <span class="_15vc6yg" aria-hidden="true">·</span>
+                    <p><a href="">Destinations</a></p>
+                </div>
+                <div class="footer-right">
+                    <p class="language"><i class="bi bi-globe"></i> <a href="">English (IN)</a></p>
+                    <p class="currency"><i class="bi bi-currency-rupee"></i> <a href="">INR</a></p>
+                    <p class="support"><a href="">Support & resources</a> <i class="bi bi-chevron-up"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
