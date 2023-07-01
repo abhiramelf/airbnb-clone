@@ -360,6 +360,7 @@ p {
 
 a  {
     text-decoration: none;
+    color: rgb(71, 69, 69);
 }
 
 a:hover {
@@ -381,6 +382,7 @@ a:hover {
 
 .footer-left p {
     font-size: 14px;
+    color: rgb(71, 69, 69);
 }
 
 .footer-right {
